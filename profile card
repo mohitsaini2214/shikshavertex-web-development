@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOHIT SAINI- PROFILE CARD</title>
+
+    <!--font awesome for social icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <style>
+        *{
+            box-sizing:border-box;
+            margin:0;
+            padding:0;
+            font-family:'segoe ui',tahoma,ganeva,vardana,sans-serif;
+        }
+        body{
+            background-color:#f4f6f8;
+            display:flex;
+            justify-content:center;
+            min-height:100vh;
+            padding:200px;
+        }
+        /*card container */
+        .card{
+            background:#ffffff;
+            width:100%;
+            max-width:320px;
+            border-radius:16px;
+            padding:30px 24px;
+            text-align:center;
+            box-shadow:0 10px 25px rgba(0, 0, 0, 0.08);
+            transition:transform 0.3s ease , box-shadow 0.3s ease;
+        }
+        .card:hover{
+            transform:translateY(-8px);
+            box-shadow:0 15px 35px rgba(0,0,0,0.12);
+        }
+        /*circular photo placeholder*/
+        .avatar-wrapper img{
+            width:110px;
+            height:110px;
+            margin:0 auto 16px;
+            border-radius:50%;
+            overflow:hidden;
+            border:3px solid #6c5ce7;
+            padding:3px;
+        }
+        .avatar-wrapper img{
+            width:100%;
+            height:100%;
+            object-fit:coverr;
+            border-radius:50%;
+        }
+        /*text*/
+        .member-name{
+            font-size:1.3rem;
+            font-weight:700;
+            color:#2d3436;
+            margin-bottom:4px;
+        }
+        .job-title{
+            font-size:0.85rem;
+            font-weight:600;
+            color:#6c5ce7;
+            margin-bottom:12px;
+            text-transform: uppercase;
+            letter-spacing:0.5px;
+        }
+        .bio{
+            font-size:0.9rem;
+            color:#636e72;
+            line-height:1.5;
+            margin-bottom:20px;
+        }
+        /*social icons*/
+        .social-links{
+            display:flex;
+            justify-content:center;
+            gap:12px;
+        }
+        .social-icon{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            width:40px;
+            height:40px;
+            border-radius:50%;
+            background-color:#f1f2f6;
+            color:#2d3436;
+            text-decoration:none;
+            font-size:1.1rem;
+            transition:background color 0.2s ease,color 0.2s ease;
+        }
+        .social-icon:hover{
+            background-color:#6c5ce7;
+            color:#ffffff;
+        }
+    </style>
+</head>
+<body>
+  
+    <div class="card"
+    <!--profile photo placeholder-->
+<div class="avatar-wrapper">
+
+    <img src="mohit saini" alt="profile photo">
+
+<!--details-->
+<h3 class="member name">MOHIT SAINI</h3>
+<p class="job-title">web developer</p>
+
+<!--bio-->
+<p class="bio">btech 2nd year student specializing in artificial intelligene and data science</p>
+
+
+<--social links-->
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/mohit-saini-9b2ab2399" target="_blank" class="social-icon" arial-label="linkedin">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/mohitsaini2214" target="_blank" class="social-icon" aria-label="github">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://x.com/mohitsaini2214" target="_blank" class="social-icon" aria-label="twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+        </div>
+    </div>
+</body>
+</html>
